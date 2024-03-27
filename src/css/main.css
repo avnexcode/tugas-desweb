@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-section#main_page {
+section#blpt_page {
   overflow: hidden;
   padding: 3px;
   display: flex;
@@ -16,39 +16,42 @@ section#main_page {
   height: 100vh;
   font-family: "Poppins", sans-serif;
 }
-section#main_page header {
+section#blpt_page header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   border-bottom: 3px solid black;
 }
-section#main_page header h1 {
-  font-size: 2rem;
+section#blpt_page header .logo img {
+  width: 60px;
 }
-section#main_page header h1::first-letter {
+section#blpt_page header .title h1 {
   font-size: 3rem;
+}
+section#blpt_page header .title h1::first-letter {
+  font-size: 4rem;
   font-style: italic;
 }
-section#main_page nav {
+section#blpt_page nav {
   display: flex;
 }
-section#main_page nav ul {
+section#blpt_page nav ul {
   background-color: white;
   display: flex;
   margin-top: -15px;
-  margin-left: 30px;
+  margin-left: 75px;
   gap: 5px;
   list-style: none;
 }
-section#main_page nav ul li:nth-child(1) .Btn {
+section#blpt_page nav ul li:nth-child(1) .nav-link {
   border: 1px solid black;
 }
-section#main_page nav ul li:nth-child(1) .Btn::before {
+section#blpt_page nav ul li:nth-child(1) .nav-link::before {
   transition-duration: 0.3s;
   transform: translate(100%, -50%);
   border-radius: 0;
 }
-section#main_page nav ul li .Btn {
+section#blpt_page nav ul li .nav-link {
   min-width: 120px;
   padding: 0 10px;
   text-decoration: none;
@@ -67,7 +70,7 @@ section#main_page nav ul li .Btn {
   overflow: hidden;
   transition-duration: 0.3s;
 }
-section#main_page nav ul li .Btn::before {
+section#blpt_page nav ul li .nav-link::before {
   width: 130px;
   height: 130px;
   position: absolute;
@@ -79,89 +82,89 @@ section#main_page nav ul li .Btn::before {
   transition-duration: 0.3s;
   mix-blend-mode: difference;
 }
-section#main_page nav ul li .Btn:hover::before {
+section#blpt_page nav ul li .nav-link:hover::before {
   transition-duration: 0.3s;
   transform: translate(100%, -50%);
   border-radius: 0;
 }
-section#main_page nav ul li .Btn:active {
+section#blpt_page nav ul li .nav-link:active {
   transform: translate(5px, 5px);
   transition-duration: 0.3s;
 }
-section#main_page section {
+section#blpt_page section {
   height: 100%;
   margin-top: 0.5rem;
   display: flex;
   gap: 5px;
   min-height: 30vh;
 }
-section#main_page section aside {
+section#blpt_page section aside {
   padding: 5px 20px;
   border: 1px solid black;
   padding-top: 1rem;
 }
-section#main_page section aside .title {
+section#blpt_page section aside .title {
   background-color: black;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   padding: 5px 10px;
   min-width: max-content;
 }
-section#main_page section aside .title h1 {
+section#blpt_page section aside .title h1 {
   font-size: 1rem;
   text-align: center;
   color: white;
 }
-section#main_page section aside ul {
+section#blpt_page section aside ul {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   list-style: none;
 }
-section#main_page section aside ul li {
+section#blpt_page section aside ul li {
   display: flex;
   justify-content: center;
 }
-section#main_page section aside ul li:nth-child(1) {
+section#blpt_page section aside ul li:nth-child(1) {
   font-weight: bold;
 }
-section#main_page section aside ul li a {
-  font-size: 1.1rem;
+section#blpt_page section aside ul li a {
+  font-size: 1rem;
   width: 100%;
   color: black;
   text-decoration: none;
   text-align: center;
 }
-section#main_page section main {
+section#blpt_page section main {
   overflow-y: auto;
   flex-grow: 1;
   border: 1px solid black;
   height: 100%;
 }
-section#main_page section main::-webkit-scrollbar {
+section#blpt_page section main::-webkit-scrollbar {
   height: 5px;
   width: 5px;
 }
-section#main_page section main::-webkit-scrollbar-track {
+section#blpt_page section main::-webkit-scrollbar-track {
   border-radius: 0;
   background-color: #dfe9eb;
 }
-section#main_page section main::-webkit-scrollbar-track:hover {
+section#blpt_page section main::-webkit-scrollbar-track:hover {
   background-color: #b8c0c2;
 }
-section#main_page section main::-webkit-scrollbar-track:active {
+section#blpt_page section main::-webkit-scrollbar-track:active {
   background-color: #b8c0c2;
 }
-section#main_page section main::-webkit-scrollbar-thumb {
+section#blpt_page section main::-webkit-scrollbar-thumb {
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.724);
 }
-section#main_page section main::-webkit-scrollbar-thumb:hover {
+section#blpt_page section main::-webkit-scrollbar-thumb:hover {
   background-color: black;
 }
-section#main_page section main::-webkit-scrollbar-thumb:active {
+section#blpt_page section main::-webkit-scrollbar-thumb:active {
   background-color: black;
 }
-section#main_page section main .title {
+section#blpt_page section main .title {
   position: sticky;
   top: 0;
   background-color: white;
@@ -169,7 +172,7 @@ section#main_page section main .title {
   justify-content: center;
   padding: 5px;
 }
-section#main_page section main .title h1 {
+section#blpt_page section main .title h1 {
   background-color: black;
   width: 100%;
   text-align: center;
@@ -177,7 +180,7 @@ section#main_page section main .title h1 {
   color: white;
   font-size: 2rem;
 }
-section#main_page section main .content {
+section#blpt_page section main .content {
   z-index: -1;
   display: flex;
   flex-direction: column;
@@ -186,15 +189,15 @@ section#main_page section main .content {
   justify-content: center;
   align-items: center;
 }
-section#main_page section main .content p {
+section#blpt_page section main .content p {
   text-align: justify;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
-section#main_page section main .content p::first-letter {
+section#blpt_page section main .content p::first-letter {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
-section#main_page footer {
+section#blpt_page footer {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -202,15 +205,471 @@ section#main_page footer {
   border: 1px solid black;
   padding: 0.5rem 2rem;
 }
-section#main_page footer div:nth-child(1) {
+section#blpt_page footer div:nth-child(1) {
   min-width: max-content;
 }
-section#main_page footer div:nth-child(2) {
+section#blpt_page footer div:nth-child(2) {
   display: flex;
   gap: 2rem;
 }
-section#main_page footer div:nth-child(2) ul {
+section#blpt_page footer div:nth-child(2) ul {
   list-style: square;
+}
+
+section#amikom_page {
+  overflow: hidden;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+section#amikom_page header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
+section#amikom_page header .logo img {
+  width: 60px;
+}
+section#amikom_page header .title h1 {
+  font-size: 3rem;
+}
+section#amikom_page header .title h1::first-letter {
+  font-size: 4rem;
+  font-style: italic;
+}
+section#amikom_page nav {
+  display: flex;
+}
+section#amikom_page nav ul {
+  background-color: white;
+  display: flex;
+  margin-top: -15px;
+  margin-left: 75px;
+  gap: 5px;
+  list-style: none;
+}
+section#amikom_page nav ul li:nth-child(2) .nav-link {
+  border: 1px solid black;
+}
+section#amikom_page nav ul li:nth-child(2) .nav-link::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#amikom_page nav ul li .nav-link {
+  min-width: 120px;
+  padding: 0 10px;
+  text-decoration: none;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+section#amikom_page nav ul li .nav-link::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: 0.3s;
+  mix-blend-mode: difference;
+}
+section#amikom_page nav ul li .nav-link:hover::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#amikom_page nav ul li .nav-link:active {
+  transform: translate(5px, 5px);
+  transition-duration: 0.3s;
+}
+section#amikom_page section {
+  height: 100%;
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 5px;
+  min-height: 30vh;
+}
+section#amikom_page section aside {
+  padding: 5px 20px;
+  border: 1px solid black;
+  padding-top: 1rem;
+}
+section#amikom_page section aside .title {
+  background-color: black;
+  margin-bottom: 2rem;
+  padding: 5px 10px;
+  min-width: max-content;
+}
+section#amikom_page section aside .title h1 {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+section#amikom_page section aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+}
+section#amikom_page section aside ul li {
+  display: flex;
+  justify-content: center;
+}
+section#amikom_page section aside ul li:nth-child(1) {
+  font-weight: bold;
+}
+section#amikom_page section aside ul li a {
+  font-size: 1rem;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+section#amikom_page section main {
+  overflow-y: auto;
+  flex-grow: 1;
+  border: 1px solid black;
+  height: 100%;
+}
+section#amikom_page section main::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+section#amikom_page section main::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #dfe9eb;
+}
+section#amikom_page section main::-webkit-scrollbar-track:hover {
+  background-color: #b8c0c2;
+}
+section#amikom_page section main::-webkit-scrollbar-track:active {
+  background-color: #b8c0c2;
+}
+section#amikom_page section main::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.724);
+}
+section#amikom_page section main::-webkit-scrollbar-thumb:hover {
+  background-color: black;
+}
+section#amikom_page section main::-webkit-scrollbar-thumb:active {
+  background-color: black;
+}
+section#amikom_page section main .title {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+section#amikom_page section main .title h1 {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 0.3rem;
+  color: white;
+  font-size: 2rem;
+}
+section#amikom_page section main .content {
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+}
+section#amikom_page section main .content p {
+  text-align: justify;
+  font-size: 0.9rem;
+}
+section#amikom_page section main .content p::first-letter {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+section#amikom_page footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  border: 1px solid black;
+  padding: 0.5rem 2rem;
+}
+section#amikom_page footer div:nth-child(1) {
+  min-width: max-content;
+}
+section#amikom_page footer div:nth-child(2) {
+  display: flex;
+  gap: 2rem;
+}
+section#amikom_page footer div:nth-child(2) ul {
+  list-style: square;
+}
+
+section#wisata_page {
+  overflow: hidden;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+section#wisata_page header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
+section#wisata_page header:hover .logo {
+  animation: none;
+  transform: scale(8) translateX(100%) translateY(50%);
+}
+section#wisata_page header .logo {
+  z-index: 999;
+  animation: spin 1s linear infinite;
+}
+section#wisata_page header .logo img {
+  width: 85px;
+}
+section#wisata_page header .title h1 {
+  font-size: 3rem;
+}
+section#wisata_page header .title h1::first-letter {
+  font-size: 4rem;
+  font-style: italic;
+}
+section#wisata_page nav {
+  display: flex;
+}
+section#wisata_page nav ul {
+  background-color: white;
+  display: flex;
+  margin-top: -15px;
+  margin-left: 75px;
+  gap: 5px;
+  list-style: none;
+}
+section#wisata_page nav ul li:nth-child(3) .nav-link {
+  border: 1px solid black;
+}
+section#wisata_page nav ul li:nth-child(3) .nav-link::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#wisata_page nav ul li .nav-link {
+  min-width: 120px;
+  padding: 0 10px;
+  text-decoration: none;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+section#wisata_page nav ul li .nav-link::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: 0.3s;
+  mix-blend-mode: difference;
+}
+section#wisata_page nav ul li .nav-link:hover::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#wisata_page nav ul li .nav-link:active {
+  transform: translate(5px, 5px);
+  transition-duration: 0.3s;
+}
+section#wisata_page section {
+  height: 100%;
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 5px;
+  min-height: 30vh;
+}
+section#wisata_page section aside {
+  padding: 5px 20px;
+  border: 1px solid black;
+  padding-top: 1rem;
+}
+section#wisata_page section aside .title {
+  background-color: black;
+  margin-bottom: 2rem;
+  padding: 5px 10px;
+  min-width: max-content;
+}
+section#wisata_page section aside .title h1 {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+section#wisata_page section aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+}
+section#wisata_page section aside ul li {
+  display: flex;
+  justify-content: center;
+}
+section#wisata_page section aside ul li:nth-child(1) {
+  font-weight: bold;
+}
+section#wisata_page section aside ul li a {
+  font-size: 1rem;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+section#wisata_page section main {
+  overflow-y: auto;
+  flex-grow: 1;
+  border: 1px solid black;
+  height: 100%;
+}
+section#wisata_page section main::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+section#wisata_page section main::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #dfe9eb;
+}
+section#wisata_page section main::-webkit-scrollbar-track:hover {
+  background-color: #b8c0c2;
+}
+section#wisata_page section main::-webkit-scrollbar-track:active {
+  background-color: #b8c0c2;
+}
+section#wisata_page section main::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.724);
+}
+section#wisata_page section main::-webkit-scrollbar-thumb:hover {
+  background-color: black;
+}
+section#wisata_page section main::-webkit-scrollbar-thumb:active {
+  background-color: black;
+}
+section#wisata_page section main .title {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+section#wisata_page section main .title h1 {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 0.3rem;
+  color: white;
+  font-size: 2rem;
+}
+section#wisata_page section main .content {
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+}
+section#wisata_page section main .content_title {
+  width: 100%;
+}
+section#wisata_page section main .content_title h1 {
+  text-decoration: underline;
+  text-align: left;
+  width: 100%;
+}
+section#wisata_page section main .content_title h1::first-letter {
+  font-size: 3rem;
+}
+section#wisata_page section main .content_image {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 10px;
+}
+section#wisata_page section main .content_image img {
+  width: 550px;
+}
+section#wisata_page section main .content p {
+  text-align: justify;
+  font-size: 0.9rem;
+}
+section#wisata_page section main .content p::first-letter {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+section#wisata_page footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  border: 1px solid black;
+  padding: 0.5rem 2rem;
+}
+section#wisata_page footer div:nth-child(1) {
+  min-width: max-content;
+}
+section#wisata_page footer div:nth-child(2) {
+  display: flex;
+  gap: 2rem;
+}
+section#wisata_page footer div:nth-child(2) ul {
+  list-style: square;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
