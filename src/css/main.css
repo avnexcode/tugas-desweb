@@ -1,8 +1,48 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Onest:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+div#close-content {
+  z-index: 999999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f5f9;
+  font-family: "Onest", sans-serif;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 1280px) {
+  div#close-content {
+    display: none;
+  }
+}
+div#close-content h1 {
+  text-align: center;
+}
+@media only screen and (min-width: 640px) {
+  div#close-content h1 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  div#close-content h1 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  div#close-content h1 {
+    font-size: 3rem;
+  }
 }
 
 section#blpt_page {
@@ -95,13 +135,13 @@ section#blpt_page section {
   height: 100%;
   margin-top: 0.5rem;
   display: flex;
-  gap: 5px;
+  gap: 1.5px;
   min-height: 30vh;
 }
 section#blpt_page section aside {
   padding: 5px 20px;
-  border: 1px solid black;
-  padding-top: 1rem;
+  border-right: 3px solid black;
+  padding-top: 0.8rem;
 }
 section#blpt_page section aside .title {
   background-color: black;
@@ -137,7 +177,7 @@ section#blpt_page section aside ul li a {
 section#blpt_page section main {
   overflow-y: auto;
   flex-grow: 1;
-  border: 1px solid black;
+  border-left: 3px solid black;
   height: 100%;
 }
 section#blpt_page section main::-webkit-scrollbar {
@@ -146,23 +186,23 @@ section#blpt_page section main::-webkit-scrollbar {
 }
 section#blpt_page section main::-webkit-scrollbar-track {
   border-radius: 0;
-  background-color: #dfe9eb;
+  background-color: #9ca3af;
 }
 section#blpt_page section main::-webkit-scrollbar-track:hover {
-  background-color: #b8c0c2;
+  background-color: #9ca3af;
 }
 section#blpt_page section main::-webkit-scrollbar-track:active {
-  background-color: #b8c0c2;
+  background-color: #9ca3af;
 }
 section#blpt_page section main::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.724);
+  background-color: #4b5563;
 }
 section#blpt_page section main::-webkit-scrollbar-thumb:hover {
-  background-color: black;
+  background-color: #4b5563;
 }
 section#blpt_page section main::-webkit-scrollbar-thumb:active {
-  background-color: black;
+  background-color: #4b5563;
 }
 section#blpt_page section main .title {
   position: sticky;
@@ -171,6 +211,7 @@ section#blpt_page section main .title {
   display: flex;
   justify-content: center;
   padding: 5px;
+  padding-top: 0;
 }
 section#blpt_page section main .title h1 {
   background-color: black;
@@ -202,8 +243,8 @@ section#blpt_page footer {
   justify-content: space-between;
   width: 100%;
   align-items: center;
-  border: 1px solid black;
-  padding: 0.5rem 2rem;
+  border-top: 3px solid black;
+  padding: 0.1rem 1rem;
 }
 section#blpt_page footer div:nth-child(1) {
   min-width: max-content;
@@ -306,13 +347,13 @@ section#amikom_page section {
   height: 100%;
   margin-top: 0.5rem;
   display: flex;
-  gap: 5px;
+  gap: 1.5px;
   min-height: 30vh;
 }
 section#amikom_page section aside {
   padding: 5px 20px;
-  border: 1px solid black;
-  padding-top: 1rem;
+  border-right: 3px solid black;
+  padding-top: 0.8rem;
 }
 section#amikom_page section aside .title {
   background-color: black;
@@ -348,7 +389,7 @@ section#amikom_page section aside ul li a {
 section#amikom_page section main {
   overflow-y: auto;
   flex-grow: 1;
-  border: 1px solid black;
+  border-left: 3px solid black;
   height: 100%;
 }
 section#amikom_page section main::-webkit-scrollbar {
@@ -357,23 +398,23 @@ section#amikom_page section main::-webkit-scrollbar {
 }
 section#amikom_page section main::-webkit-scrollbar-track {
   border-radius: 0;
-  background-color: #dfe9eb;
+  background-color: #9ca3af;
 }
 section#amikom_page section main::-webkit-scrollbar-track:hover {
-  background-color: #b8c0c2;
+  background-color: #9ca3af;
 }
 section#amikom_page section main::-webkit-scrollbar-track:active {
-  background-color: #b8c0c2;
+  background-color: #9ca3af;
 }
 section#amikom_page section main::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.724);
+  background-color: #4b5563;
 }
 section#amikom_page section main::-webkit-scrollbar-thumb:hover {
-  background-color: black;
+  background-color: #4b5563;
 }
 section#amikom_page section main::-webkit-scrollbar-thumb:active {
-  background-color: black;
+  background-color: #4b5563;
 }
 section#amikom_page section main .title {
   position: sticky;
@@ -382,6 +423,7 @@ section#amikom_page section main .title {
   display: flex;
   justify-content: center;
   padding: 5px;
+  padding-top: 0;
 }
 section#amikom_page section main .title h1 {
   background-color: black;
@@ -413,8 +455,8 @@ section#amikom_page footer {
   justify-content: space-between;
   width: 100%;
   align-items: center;
-  border: 1px solid black;
-  padding: 0.5rem 2rem;
+  border-top: 3px solid black;
+  padding: 0.1rem 1rem;
 }
 section#amikom_page footer div:nth-child(1) {
   min-width: max-content;
@@ -525,13 +567,13 @@ section#wisata_page section {
   height: 100%;
   margin-top: 0.5rem;
   display: flex;
-  gap: 5px;
+  gap: 1.5px;
   min-height: 30vh;
 }
 section#wisata_page section aside {
   padding: 5px 20px;
-  border: 1px solid black;
-  padding-top: 1rem;
+  border-right: 3px solid black;
+  padding-top: 0.8rem;
 }
 section#wisata_page section aside .title {
   background-color: black;
@@ -567,7 +609,7 @@ section#wisata_page section aside ul li a {
 section#wisata_page section main {
   overflow-y: auto;
   flex-grow: 1;
-  border: 1px solid black;
+  border-left: 3px solid black;
   height: 100%;
 }
 section#wisata_page section main::-webkit-scrollbar {
@@ -576,23 +618,23 @@ section#wisata_page section main::-webkit-scrollbar {
 }
 section#wisata_page section main::-webkit-scrollbar-track {
   border-radius: 0;
-  background-color: #dfe9eb;
+  background-color: #9ca3af;
 }
 section#wisata_page section main::-webkit-scrollbar-track:hover {
-  background-color: #b8c0c2;
+  background-color: #9ca3af;
 }
 section#wisata_page section main::-webkit-scrollbar-track:active {
-  background-color: #b8c0c2;
+  background-color: #9ca3af;
 }
 section#wisata_page section main::-webkit-scrollbar-thumb {
   border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.724);
+  background-color: #4b5563;
 }
 section#wisata_page section main::-webkit-scrollbar-thumb:hover {
-  background-color: black;
+  background-color: #4b5563;
 }
 section#wisata_page section main::-webkit-scrollbar-thumb:active {
-  background-color: black;
+  background-color: #4b5563;
 }
 section#wisata_page section main .title {
   position: sticky;
@@ -601,6 +643,7 @@ section#wisata_page section main .title {
   display: flex;
   justify-content: center;
   padding: 5px;
+  padding-top: 0;
 }
 section#wisata_page section main .title h1 {
   background-color: black;
@@ -633,9 +676,39 @@ section#wisata_page section main .content_image {
   display: flex;
   gap: 50px;
   margin-bottom: 10px;
+  max-height: 300px;
 }
 section#wisata_page section main .content_image img {
   width: 550px;
+  aspect-ratio: 2/1;
+}
+section#wisata_page section main .content_image_description {
+  padding: 5px;
+  overflow-y: auto;
+}
+section#wisata_page section main .content_image_description::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+section#wisata_page section main .content_image_description::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #9ca3af;
+}
+section#wisata_page section main .content_image_description::-webkit-scrollbar-track:hover {
+  background-color: #9ca3af;
+}
+section#wisata_page section main .content_image_description::-webkit-scrollbar-track:active {
+  background-color: #9ca3af;
+}
+section#wisata_page section main .content_image_description::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #4b5563;
+}
+section#wisata_page section main .content_image_description::-webkit-scrollbar-thumb:hover {
+  background-color: #4b5563;
+}
+section#wisata_page section main .content_image_description::-webkit-scrollbar-thumb:active {
+  background-color: #4b5563;
 }
 section#wisata_page section main .content p {
   text-align: justify;
@@ -650,8 +723,8 @@ section#wisata_page footer {
   justify-content: space-between;
   width: 100%;
   align-items: center;
-  border: 1px solid black;
-  padding: 0.5rem 2rem;
+  border-top: 3px solid black;
+  padding: 0.1rem 1rem;
 }
 section#wisata_page footer div:nth-child(1) {
   min-width: max-content;
@@ -661,6 +734,2318 @@ section#wisata_page footer div:nth-child(2) {
   gap: 2rem;
 }
 section#wisata_page footer div:nth-child(2) ul {
+  list-style: square;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+section#blpt_detail_material {
+  overflow: hidden;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+section#blpt_detail_material header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
+section#blpt_detail_material header .logo img {
+  width: 60px;
+}
+section#blpt_detail_material header .title h1 {
+  font-size: 3rem;
+}
+section#blpt_detail_material header .title h1::first-letter {
+  font-size: 4rem;
+  font-style: italic;
+}
+section#blpt_detail_material nav {
+  display: flex;
+}
+section#blpt_detail_material nav ul {
+  background-color: white;
+  display: flex;
+  margin-top: -15px;
+  margin-left: 75px;
+  gap: 5px;
+  list-style: none;
+}
+section#blpt_detail_material nav ul li:nth-child(1) .nav-link {
+  border: 1px solid black;
+}
+section#blpt_detail_material nav ul li:nth-child(1) .nav-link::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#blpt_detail_material nav ul li .nav-link {
+  min-width: 120px;
+  padding: 0 10px;
+  text-decoration: none;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+section#blpt_detail_material nav ul li .nav-link::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: 0.3s;
+  mix-blend-mode: difference;
+}
+section#blpt_detail_material nav ul li .nav-link:hover::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#blpt_detail_material nav ul li .nav-link:active {
+  transform: translate(5px, 5px);
+  transition-duration: 0.3s;
+}
+section#blpt_detail_material section {
+  height: 100%;
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1.5px;
+  min-height: 30vh;
+}
+section#blpt_detail_material section aside {
+  padding: 5px 20px;
+  border-right: 3px solid black;
+  padding-top: 0.8rem;
+}
+section#blpt_detail_material section aside .title {
+  background-color: black;
+  margin-bottom: 2rem;
+  padding: 5px 10px;
+  min-width: max-content;
+}
+section#blpt_detail_material section aside .title h1 {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+section#blpt_detail_material section aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+}
+section#blpt_detail_material section aside ul li {
+  display: flex;
+  justify-content: center;
+}
+section#blpt_detail_material section aside ul li:nth-child(2) {
+  font-weight: bold;
+}
+section#blpt_detail_material section aside ul li a {
+  font-size: 1rem;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+section#blpt_detail_material section main {
+  overflow-y: auto;
+  flex-grow: 1;
+  border-left: 3px solid black;
+  height: 100%;
+}
+section#blpt_detail_material section main::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+section#blpt_detail_material section main::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #9ca3af;
+}
+section#blpt_detail_material section main::-webkit-scrollbar-track:hover {
+  background-color: #9ca3af;
+}
+section#blpt_detail_material section main::-webkit-scrollbar-track:active {
+  background-color: #9ca3af;
+}
+section#blpt_detail_material section main::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #4b5563;
+}
+section#blpt_detail_material section main::-webkit-scrollbar-thumb:hover {
+  background-color: #4b5563;
+}
+section#blpt_detail_material section main::-webkit-scrollbar-thumb:active {
+  background-color: #4b5563;
+}
+section#blpt_detail_material section main .title {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  padding-top: 0;
+}
+section#blpt_detail_material section main .title h1 {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 0.3rem;
+  color: white;
+  font-size: 2rem;
+}
+section#blpt_detail_material section main .content {
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+}
+section#blpt_detail_material section main .content p {
+  text-align: justify;
+  font-size: 0.9rem;
+}
+section#blpt_detail_material section main .content p::first-letter {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+section#blpt_detail_material footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  border-top: 3px solid black;
+  padding: 0.1rem 1rem;
+}
+section#blpt_detail_material footer div:nth-child(1) {
+  min-width: max-content;
+}
+section#blpt_detail_material footer div:nth-child(2) {
+  display: flex;
+  gap: 2rem;
+}
+section#blpt_detail_material footer div:nth-child(2) ul {
+  list-style: square;
+}
+
+section#blpt_detail_structure {
+  overflow: hidden;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+section#blpt_detail_structure header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
+section#blpt_detail_structure header .logo img {
+  width: 60px;
+}
+section#blpt_detail_structure header .title h1 {
+  font-size: 3rem;
+}
+section#blpt_detail_structure header .title h1::first-letter {
+  font-size: 4rem;
+  font-style: italic;
+}
+section#blpt_detail_structure nav {
+  display: flex;
+}
+section#blpt_detail_structure nav ul {
+  background-color: white;
+  display: flex;
+  margin-top: -15px;
+  margin-left: 75px;
+  gap: 5px;
+  list-style: none;
+}
+section#blpt_detail_structure nav ul li:nth-child(1) .nav-link {
+  border: 1px solid black;
+}
+section#blpt_detail_structure nav ul li:nth-child(1) .nav-link::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#blpt_detail_structure nav ul li .nav-link {
+  min-width: 120px;
+  padding: 0 10px;
+  text-decoration: none;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+section#blpt_detail_structure nav ul li .nav-link::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: 0.3s;
+  mix-blend-mode: difference;
+}
+section#blpt_detail_structure nav ul li .nav-link:hover::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#blpt_detail_structure nav ul li .nav-link:active {
+  transform: translate(5px, 5px);
+  transition-duration: 0.3s;
+}
+section#blpt_detail_structure section {
+  height: 100%;
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1.5px;
+  min-height: 30vh;
+}
+section#blpt_detail_structure section aside {
+  padding: 5px 20px;
+  border-right: 3px solid black;
+  padding-top: 0.8rem;
+}
+section#blpt_detail_structure section aside .title {
+  background-color: black;
+  margin-bottom: 2rem;
+  padding: 5px 10px;
+  min-width: max-content;
+}
+section#blpt_detail_structure section aside .title h1 {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+section#blpt_detail_structure section aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+}
+section#blpt_detail_structure section aside ul li {
+  display: flex;
+  justify-content: center;
+}
+section#blpt_detail_structure section aside ul li:nth-child(3) {
+  font-weight: bold;
+}
+section#blpt_detail_structure section aside ul li a {
+  font-size: 1rem;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+section#blpt_detail_structure section main {
+  overflow-y: auto;
+  flex-grow: 1;
+  border-left: 3px solid black;
+  height: 100%;
+}
+section#blpt_detail_structure section main::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+section#blpt_detail_structure section main::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #9ca3af;
+}
+section#blpt_detail_structure section main::-webkit-scrollbar-track:hover {
+  background-color: #9ca3af;
+}
+section#blpt_detail_structure section main::-webkit-scrollbar-track:active {
+  background-color: #9ca3af;
+}
+section#blpt_detail_structure section main::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #4b5563;
+}
+section#blpt_detail_structure section main::-webkit-scrollbar-thumb:hover {
+  background-color: #4b5563;
+}
+section#blpt_detail_structure section main::-webkit-scrollbar-thumb:active {
+  background-color: #4b5563;
+}
+section#blpt_detail_structure section main .title {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  padding-top: 0;
+}
+section#blpt_detail_structure section main .title h1 {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 0.3rem;
+  color: white;
+  font-size: 2rem;
+}
+section#blpt_detail_structure section main .content {
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+}
+section#blpt_detail_structure section main .content p {
+  text-align: justify;
+  font-size: 0.9rem;
+}
+section#blpt_detail_structure section main .content p::first-letter {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+section#blpt_detail_structure footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  border-top: 3px solid black;
+  padding: 0.1rem 1rem;
+}
+section#blpt_detail_structure footer div:nth-child(1) {
+  min-width: max-content;
+}
+section#blpt_detail_structure footer div:nth-child(2) {
+  display: flex;
+  gap: 2rem;
+}
+section#blpt_detail_structure footer div:nth-child(2) ul {
+  list-style: square;
+}
+
+section#blpt_detail_project {
+  overflow: hidden;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+section#blpt_detail_project header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
+section#blpt_detail_project header .logo img {
+  width: 60px;
+}
+section#blpt_detail_project header .title h1 {
+  font-size: 3rem;
+}
+section#blpt_detail_project header .title h1::first-letter {
+  font-size: 4rem;
+  font-style: italic;
+}
+section#blpt_detail_project nav {
+  display: flex;
+}
+section#blpt_detail_project nav ul {
+  background-color: white;
+  display: flex;
+  margin-top: -15px;
+  margin-left: 75px;
+  gap: 5px;
+  list-style: none;
+}
+section#blpt_detail_project nav ul li:nth-child(1) .nav-link {
+  border: 1px solid black;
+}
+section#blpt_detail_project nav ul li:nth-child(1) .nav-link::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#blpt_detail_project nav ul li .nav-link {
+  min-width: 120px;
+  padding: 0 10px;
+  text-decoration: none;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+section#blpt_detail_project nav ul li .nav-link::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: 0.3s;
+  mix-blend-mode: difference;
+}
+section#blpt_detail_project nav ul li .nav-link:hover::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#blpt_detail_project nav ul li .nav-link:active {
+  transform: translate(5px, 5px);
+  transition-duration: 0.3s;
+}
+section#blpt_detail_project section {
+  height: 100%;
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1.5px;
+  min-height: 30vh;
+}
+section#blpt_detail_project section aside {
+  padding: 5px 20px;
+  border-right: 3px solid black;
+  padding-top: 0.8rem;
+}
+section#blpt_detail_project section aside .title {
+  background-color: black;
+  margin-bottom: 2rem;
+  padding: 5px 10px;
+  min-width: max-content;
+}
+section#blpt_detail_project section aside .title h1 {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+section#blpt_detail_project section aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+}
+section#blpt_detail_project section aside ul li {
+  display: flex;
+  justify-content: center;
+}
+section#blpt_detail_project section aside ul li:nth-child(4) {
+  font-weight: bold;
+}
+section#blpt_detail_project section aside ul li a {
+  font-size: 1rem;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+section#blpt_detail_project section main {
+  overflow-y: auto;
+  flex-grow: 1;
+  border-left: 3px solid black;
+  height: 100%;
+}
+section#blpt_detail_project section main::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+section#blpt_detail_project section main::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #9ca3af;
+}
+section#blpt_detail_project section main::-webkit-scrollbar-track:hover {
+  background-color: #9ca3af;
+}
+section#blpt_detail_project section main::-webkit-scrollbar-track:active {
+  background-color: #9ca3af;
+}
+section#blpt_detail_project section main::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #4b5563;
+}
+section#blpt_detail_project section main::-webkit-scrollbar-thumb:hover {
+  background-color: #4b5563;
+}
+section#blpt_detail_project section main::-webkit-scrollbar-thumb:active {
+  background-color: #4b5563;
+}
+section#blpt_detail_project section main .title {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  padding-top: 0;
+}
+section#blpt_detail_project section main .title h1 {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 0.3rem;
+  color: white;
+  font-size: 2rem;
+}
+section#blpt_detail_project section main .content {
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+}
+section#blpt_detail_project section main .content p {
+  text-align: justify;
+  font-size: 0.9rem;
+}
+section#blpt_detail_project section main .content p::first-letter {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+section#blpt_detail_project footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  border-top: 3px solid black;
+  padding: 0.1rem 1rem;
+}
+section#blpt_detail_project footer div:nth-child(1) {
+  min-width: max-content;
+}
+section#blpt_detail_project footer div:nth-child(2) {
+  display: flex;
+  gap: 2rem;
+}
+section#blpt_detail_project footer div:nth-child(2) ul {
+  list-style: square;
+}
+
+section#blpt_detail_documentation {
+  overflow: hidden;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+section#blpt_detail_documentation header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
+section#blpt_detail_documentation header .logo img {
+  width: 60px;
+}
+section#blpt_detail_documentation header .title h1 {
+  font-size: 3rem;
+}
+section#blpt_detail_documentation header .title h1::first-letter {
+  font-size: 4rem;
+  font-style: italic;
+}
+section#blpt_detail_documentation nav {
+  display: flex;
+}
+section#blpt_detail_documentation nav ul {
+  background-color: white;
+  display: flex;
+  margin-top: -15px;
+  margin-left: 75px;
+  gap: 5px;
+  list-style: none;
+}
+section#blpt_detail_documentation nav ul li:nth-child(1) .nav-link {
+  border: 1px solid black;
+}
+section#blpt_detail_documentation nav ul li:nth-child(1) .nav-link::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#blpt_detail_documentation nav ul li .nav-link {
+  min-width: 120px;
+  padding: 0 10px;
+  text-decoration: none;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+section#blpt_detail_documentation nav ul li .nav-link::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: 0.3s;
+  mix-blend-mode: difference;
+}
+section#blpt_detail_documentation nav ul li .nav-link:hover::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#blpt_detail_documentation nav ul li .nav-link:active {
+  transform: translate(5px, 5px);
+  transition-duration: 0.3s;
+}
+section#blpt_detail_documentation section {
+  height: 100%;
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1.5px;
+  min-height: 30vh;
+}
+section#blpt_detail_documentation section aside {
+  padding: 5px 20px;
+  border-right: 3px solid black;
+  padding-top: 0.8rem;
+}
+section#blpt_detail_documentation section aside .title {
+  background-color: black;
+  margin-bottom: 2rem;
+  padding: 5px 10px;
+  min-width: max-content;
+}
+section#blpt_detail_documentation section aside .title h1 {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+section#blpt_detail_documentation section aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+}
+section#blpt_detail_documentation section aside ul li {
+  display: flex;
+  justify-content: center;
+}
+section#blpt_detail_documentation section aside ul li:nth-child(5) {
+  font-weight: bold;
+}
+section#blpt_detail_documentation section aside ul li a {
+  font-size: 1rem;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+section#blpt_detail_documentation section main {
+  overflow-y: auto;
+  flex-grow: 1;
+  border-left: 3px solid black;
+  height: 100%;
+}
+section#blpt_detail_documentation section main::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+section#blpt_detail_documentation section main::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #9ca3af;
+}
+section#blpt_detail_documentation section main::-webkit-scrollbar-track:hover {
+  background-color: #9ca3af;
+}
+section#blpt_detail_documentation section main::-webkit-scrollbar-track:active {
+  background-color: #9ca3af;
+}
+section#blpt_detail_documentation section main::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #4b5563;
+}
+section#blpt_detail_documentation section main::-webkit-scrollbar-thumb:hover {
+  background-color: #4b5563;
+}
+section#blpt_detail_documentation section main::-webkit-scrollbar-thumb:active {
+  background-color: #4b5563;
+}
+section#blpt_detail_documentation section main .title {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  padding-top: 0;
+}
+section#blpt_detail_documentation section main .title h1 {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 0.3rem;
+  color: white;
+  font-size: 2rem;
+}
+section#blpt_detail_documentation section main .content {
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+}
+section#blpt_detail_documentation section main .content p {
+  text-align: justify;
+  font-size: 0.9rem;
+}
+section#blpt_detail_documentation section main .content p::first-letter {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+section#blpt_detail_documentation footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  border-top: 3px solid black;
+  padding: 0.1rem 1rem;
+}
+section#blpt_detail_documentation footer div:nth-child(1) {
+  min-width: max-content;
+}
+section#blpt_detail_documentation footer div:nth-child(2) {
+  display: flex;
+  gap: 2rem;
+}
+section#blpt_detail_documentation footer div:nth-child(2) ul {
+  list-style: square;
+}
+
+section#amikom_detail_material {
+  overflow: hidden;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+section#amikom_detail_material header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
+section#amikom_detail_material header .logo img {
+  width: 60px;
+}
+section#amikom_detail_material header .title h1 {
+  font-size: 3rem;
+}
+section#amikom_detail_material header .title h1::first-letter {
+  font-size: 4rem;
+  font-style: italic;
+}
+section#amikom_detail_material nav {
+  display: flex;
+}
+section#amikom_detail_material nav ul {
+  background-color: white;
+  display: flex;
+  margin-top: -15px;
+  margin-left: 75px;
+  gap: 5px;
+  list-style: none;
+}
+section#amikom_detail_material nav ul li:nth-child(2) .nav-link {
+  border: 1px solid black;
+}
+section#amikom_detail_material nav ul li:nth-child(2) .nav-link::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#amikom_detail_material nav ul li .nav-link {
+  min-width: 120px;
+  padding: 0 10px;
+  text-decoration: none;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+section#amikom_detail_material nav ul li .nav-link::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: 0.3s;
+  mix-blend-mode: difference;
+}
+section#amikom_detail_material nav ul li .nav-link:hover::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#amikom_detail_material nav ul li .nav-link:active {
+  transform: translate(5px, 5px);
+  transition-duration: 0.3s;
+}
+section#amikom_detail_material section {
+  height: 100%;
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1.5px;
+  min-height: 30vh;
+}
+section#amikom_detail_material section aside {
+  padding: 5px 20px;
+  border-right: 3px solid black;
+  padding-top: 0.8rem;
+}
+section#amikom_detail_material section aside .title {
+  background-color: black;
+  margin-bottom: 2rem;
+  padding: 5px 10px;
+  min-width: max-content;
+}
+section#amikom_detail_material section aside .title h1 {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+section#amikom_detail_material section aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+}
+section#amikom_detail_material section aside ul li {
+  display: flex;
+  justify-content: center;
+}
+section#amikom_detail_material section aside ul li:nth-child(2) {
+  font-weight: bold;
+}
+section#amikom_detail_material section aside ul li a {
+  font-size: 1rem;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+section#amikom_detail_material section main {
+  overflow-y: auto;
+  flex-grow: 1;
+  border-left: 3px solid black;
+  height: 100%;
+}
+section#amikom_detail_material section main::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+section#amikom_detail_material section main::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #9ca3af;
+}
+section#amikom_detail_material section main::-webkit-scrollbar-track:hover {
+  background-color: #9ca3af;
+}
+section#amikom_detail_material section main::-webkit-scrollbar-track:active {
+  background-color: #9ca3af;
+}
+section#amikom_detail_material section main::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #4b5563;
+}
+section#amikom_detail_material section main::-webkit-scrollbar-thumb:hover {
+  background-color: #4b5563;
+}
+section#amikom_detail_material section main::-webkit-scrollbar-thumb:active {
+  background-color: #4b5563;
+}
+section#amikom_detail_material section main .title {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  padding-top: 0;
+}
+section#amikom_detail_material section main .title h1 {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 0.3rem;
+  color: white;
+  font-size: 2rem;
+}
+section#amikom_detail_material section main .content {
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+}
+section#amikom_detail_material section main .content p {
+  text-align: justify;
+  font-size: 0.9rem;
+}
+section#amikom_detail_material section main .content p::first-letter {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+section#amikom_detail_material footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  border-top: 3px solid black;
+  padding: 0.1rem 1rem;
+}
+section#amikom_detail_material footer div:nth-child(1) {
+  min-width: max-content;
+}
+section#amikom_detail_material footer div:nth-child(2) {
+  display: flex;
+  gap: 2rem;
+}
+section#amikom_detail_material footer div:nth-child(2) ul {
+  list-style: square;
+}
+
+section#amikom_detail_structure {
+  overflow: hidden;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+section#amikom_detail_structure header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
+section#amikom_detail_structure header .logo img {
+  width: 60px;
+}
+section#amikom_detail_structure header .title h1 {
+  font-size: 3rem;
+}
+section#amikom_detail_structure header .title h1::first-letter {
+  font-size: 4rem;
+  font-style: italic;
+}
+section#amikom_detail_structure nav {
+  display: flex;
+}
+section#amikom_detail_structure nav ul {
+  background-color: white;
+  display: flex;
+  margin-top: -15px;
+  margin-left: 75px;
+  gap: 5px;
+  list-style: none;
+}
+section#amikom_detail_structure nav ul li:nth-child(2) .nav-link {
+  border: 1px solid black;
+}
+section#amikom_detail_structure nav ul li:nth-child(2) .nav-link::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#amikom_detail_structure nav ul li .nav-link {
+  min-width: 120px;
+  padding: 0 10px;
+  text-decoration: none;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+section#amikom_detail_structure nav ul li .nav-link::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: 0.3s;
+  mix-blend-mode: difference;
+}
+section#amikom_detail_structure nav ul li .nav-link:hover::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#amikom_detail_structure nav ul li .nav-link:active {
+  transform: translate(5px, 5px);
+  transition-duration: 0.3s;
+}
+section#amikom_detail_structure section {
+  height: 100%;
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1.5px;
+  min-height: 30vh;
+}
+section#amikom_detail_structure section aside {
+  padding: 5px 20px;
+  border-right: 3px solid black;
+  padding-top: 0.8rem;
+}
+section#amikom_detail_structure section aside .title {
+  background-color: black;
+  margin-bottom: 2rem;
+  padding: 5px 10px;
+  min-width: max-content;
+}
+section#amikom_detail_structure section aside .title h1 {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+section#amikom_detail_structure section aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+}
+section#amikom_detail_structure section aside ul li {
+  display: flex;
+  justify-content: center;
+}
+section#amikom_detail_structure section aside ul li:nth-child(3) {
+  font-weight: bold;
+}
+section#amikom_detail_structure section aside ul li a {
+  font-size: 1rem;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+section#amikom_detail_structure section main {
+  overflow-y: auto;
+  flex-grow: 1;
+  border-left: 3px solid black;
+  height: 100%;
+}
+section#amikom_detail_structure section main::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+section#amikom_detail_structure section main::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #9ca3af;
+}
+section#amikom_detail_structure section main::-webkit-scrollbar-track:hover {
+  background-color: #9ca3af;
+}
+section#amikom_detail_structure section main::-webkit-scrollbar-track:active {
+  background-color: #9ca3af;
+}
+section#amikom_detail_structure section main::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #4b5563;
+}
+section#amikom_detail_structure section main::-webkit-scrollbar-thumb:hover {
+  background-color: #4b5563;
+}
+section#amikom_detail_structure section main::-webkit-scrollbar-thumb:active {
+  background-color: #4b5563;
+}
+section#amikom_detail_structure section main .title {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  padding-top: 0;
+}
+section#amikom_detail_structure section main .title h1 {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 0.3rem;
+  color: white;
+  font-size: 2rem;
+}
+section#amikom_detail_structure section main .content {
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+}
+section#amikom_detail_structure section main .content p {
+  text-align: justify;
+  font-size: 0.9rem;
+}
+section#amikom_detail_structure section main .content p::first-letter {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+section#amikom_detail_structure footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  border-top: 3px solid black;
+  padding: 0.1rem 1rem;
+}
+section#amikom_detail_structure footer div:nth-child(1) {
+  min-width: max-content;
+}
+section#amikom_detail_structure footer div:nth-child(2) {
+  display: flex;
+  gap: 2rem;
+}
+section#amikom_detail_structure footer div:nth-child(2) ul {
+  list-style: square;
+}
+
+section#amikom_detail_documentation {
+  overflow: hidden;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+section#amikom_detail_documentation header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
+section#amikom_detail_documentation header .logo img {
+  width: 60px;
+}
+section#amikom_detail_documentation header .title h1 {
+  font-size: 3rem;
+}
+section#amikom_detail_documentation header .title h1::first-letter {
+  font-size: 4rem;
+  font-style: italic;
+}
+section#amikom_detail_documentation nav {
+  display: flex;
+}
+section#amikom_detail_documentation nav ul {
+  background-color: white;
+  display: flex;
+  margin-top: -15px;
+  margin-left: 75px;
+  gap: 5px;
+  list-style: none;
+}
+section#amikom_detail_documentation nav ul li:nth-child(2) .nav-link {
+  border: 1px solid black;
+}
+section#amikom_detail_documentation nav ul li:nth-child(2) .nav-link::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#amikom_detail_documentation nav ul li .nav-link {
+  min-width: 120px;
+  padding: 0 10px;
+  text-decoration: none;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+section#amikom_detail_documentation nav ul li .nav-link::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: 0.3s;
+  mix-blend-mode: difference;
+}
+section#amikom_detail_documentation nav ul li .nav-link:hover::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#amikom_detail_documentation nav ul li .nav-link:active {
+  transform: translate(5px, 5px);
+  transition-duration: 0.3s;
+}
+section#amikom_detail_documentation section {
+  height: 100%;
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1.5px;
+  min-height: 30vh;
+}
+section#amikom_detail_documentation section aside {
+  padding: 5px 20px;
+  border-right: 3px solid black;
+  padding-top: 0.8rem;
+}
+section#amikom_detail_documentation section aside .title {
+  background-color: black;
+  margin-bottom: 2rem;
+  padding: 5px 10px;
+  min-width: max-content;
+}
+section#amikom_detail_documentation section aside .title h1 {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+section#amikom_detail_documentation section aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+}
+section#amikom_detail_documentation section aside ul li {
+  display: flex;
+  justify-content: center;
+}
+section#amikom_detail_documentation section aside ul li:nth-child(4) {
+  font-weight: bold;
+}
+section#amikom_detail_documentation section aside ul li a {
+  font-size: 1rem;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+section#amikom_detail_documentation section main {
+  overflow-y: auto;
+  flex-grow: 1;
+  border-left: 3px solid black;
+  height: 100%;
+}
+section#amikom_detail_documentation section main::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+section#amikom_detail_documentation section main::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #9ca3af;
+}
+section#amikom_detail_documentation section main::-webkit-scrollbar-track:hover {
+  background-color: #9ca3af;
+}
+section#amikom_detail_documentation section main::-webkit-scrollbar-track:active {
+  background-color: #9ca3af;
+}
+section#amikom_detail_documentation section main::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #4b5563;
+}
+section#amikom_detail_documentation section main::-webkit-scrollbar-thumb:hover {
+  background-color: #4b5563;
+}
+section#amikom_detail_documentation section main::-webkit-scrollbar-thumb:active {
+  background-color: #4b5563;
+}
+section#amikom_detail_documentation section main .title {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  padding-top: 0;
+}
+section#amikom_detail_documentation section main .title h1 {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 0.3rem;
+  color: white;
+  font-size: 2rem;
+}
+section#amikom_detail_documentation section main .content {
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+}
+section#amikom_detail_documentation section main .content p {
+  text-align: justify;
+  font-size: 0.9rem;
+}
+section#amikom_detail_documentation section main .content p::first-letter {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+section#amikom_detail_documentation footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  border-top: 3px solid black;
+  padding: 0.1rem 1rem;
+}
+section#amikom_detail_documentation footer div:nth-child(1) {
+  min-width: max-content;
+}
+section#amikom_detail_documentation footer div:nth-child(2) {
+  display: flex;
+  gap: 2rem;
+}
+section#amikom_detail_documentation footer div:nth-child(2) ul {
+  list-style: square;
+}
+
+section#wisata_detail_pinus_pengger {
+  overflow: hidden;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+section#wisata_detail_pinus_pengger header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
+section#wisata_detail_pinus_pengger header:hover .logo {
+  animation: none;
+  transform: scale(8) translateX(100%) translateY(50%);
+}
+section#wisata_detail_pinus_pengger header .logo {
+  z-index: 999;
+  animation: spin 1s linear infinite;
+}
+section#wisata_detail_pinus_pengger header .logo img {
+  width: 85px;
+}
+section#wisata_detail_pinus_pengger header .title h1 {
+  font-size: 3rem;
+}
+section#wisata_detail_pinus_pengger header .title h1::first-letter {
+  font-size: 4rem;
+  font-style: italic;
+}
+section#wisata_detail_pinus_pengger nav {
+  display: flex;
+}
+section#wisata_detail_pinus_pengger nav ul {
+  background-color: white;
+  display: flex;
+  margin-top: -15px;
+  margin-left: 75px;
+  gap: 5px;
+  list-style: none;
+}
+section#wisata_detail_pinus_pengger nav ul li:nth-child(3) .nav-link {
+  border: 1px solid black;
+}
+section#wisata_detail_pinus_pengger nav ul li:nth-child(3) .nav-link::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#wisata_detail_pinus_pengger nav ul li .nav-link {
+  min-width: 120px;
+  padding: 0 10px;
+  text-decoration: none;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+section#wisata_detail_pinus_pengger nav ul li .nav-link::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: 0.3s;
+  mix-blend-mode: difference;
+}
+section#wisata_detail_pinus_pengger nav ul li .nav-link:hover::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#wisata_detail_pinus_pengger nav ul li .nav-link:active {
+  transform: translate(5px, 5px);
+  transition-duration: 0.3s;
+}
+section#wisata_detail_pinus_pengger section {
+  height: 100%;
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1.5px;
+  min-height: 30vh;
+}
+section#wisata_detail_pinus_pengger section aside {
+  padding: 5px 20px;
+  border-right: 3px solid black;
+  padding-top: 0.8rem;
+}
+section#wisata_detail_pinus_pengger section aside .title {
+  background-color: black;
+  margin-bottom: 2rem;
+  padding: 5px 10px;
+  min-width: max-content;
+}
+section#wisata_detail_pinus_pengger section aside .title h1 {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+section#wisata_detail_pinus_pengger section aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+}
+section#wisata_detail_pinus_pengger section aside ul li {
+  display: flex;
+  justify-content: center;
+}
+section#wisata_detail_pinus_pengger section aside ul li:nth-child(2) {
+  font-weight: bold;
+}
+section#wisata_detail_pinus_pengger section aside ul li a {
+  font-size: 1rem;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+section#wisata_detail_pinus_pengger section main {
+  overflow-y: auto;
+  flex-grow: 1;
+  border-left: 3px solid black;
+  height: 100%;
+}
+section#wisata_detail_pinus_pengger section main::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+section#wisata_detail_pinus_pengger section main::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #9ca3af;
+}
+section#wisata_detail_pinus_pengger section main::-webkit-scrollbar-track:hover {
+  background-color: #9ca3af;
+}
+section#wisata_detail_pinus_pengger section main::-webkit-scrollbar-track:active {
+  background-color: #9ca3af;
+}
+section#wisata_detail_pinus_pengger section main::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #4b5563;
+}
+section#wisata_detail_pinus_pengger section main::-webkit-scrollbar-thumb:hover {
+  background-color: #4b5563;
+}
+section#wisata_detail_pinus_pengger section main::-webkit-scrollbar-thumb:active {
+  background-color: #4b5563;
+}
+section#wisata_detail_pinus_pengger section main .title {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  padding-top: 0;
+}
+section#wisata_detail_pinus_pengger section main .title h1 {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 0.3rem;
+  color: white;
+  font-size: 2rem;
+}
+section#wisata_detail_pinus_pengger section main .content {
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+}
+section#wisata_detail_pinus_pengger section main .content_title {
+  width: 100%;
+}
+section#wisata_detail_pinus_pengger section main .content_title h1 {
+  text-decoration: underline;
+  text-align: left;
+  width: 100%;
+}
+section#wisata_detail_pinus_pengger section main .content_title h1::first-letter {
+  font-size: 3rem;
+}
+section#wisata_detail_pinus_pengger section main .content_image {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 10px;
+  max-height: 300px;
+}
+section#wisata_detail_pinus_pengger section main .content_image img {
+  width: 550px;
+  aspect-ratio: 2/1;
+}
+section#wisata_detail_pinus_pengger section main .content_image_description {
+  padding: 5px;
+  overflow-y: auto;
+}
+section#wisata_detail_pinus_pengger section main .content_image_description::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+section#wisata_detail_pinus_pengger section main .content_image_description::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #9ca3af;
+}
+section#wisata_detail_pinus_pengger section main .content_image_description::-webkit-scrollbar-track:hover {
+  background-color: #9ca3af;
+}
+section#wisata_detail_pinus_pengger section main .content_image_description::-webkit-scrollbar-track:active {
+  background-color: #9ca3af;
+}
+section#wisata_detail_pinus_pengger section main .content_image_description::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #4b5563;
+}
+section#wisata_detail_pinus_pengger section main .content_image_description::-webkit-scrollbar-thumb:hover {
+  background-color: #4b5563;
+}
+section#wisata_detail_pinus_pengger section main .content_image_description::-webkit-scrollbar-thumb:active {
+  background-color: #4b5563;
+}
+section#wisata_detail_pinus_pengger section main .content p {
+  text-align: justify;
+  font-size: 0.9rem;
+}
+section#wisata_detail_pinus_pengger section main .content p::first-letter {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+section#wisata_detail_pinus_pengger footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  border-top: 3px solid black;
+  padding: 0.1rem 1rem;
+}
+section#wisata_detail_pinus_pengger footer div:nth-child(1) {
+  min-width: max-content;
+}
+section#wisata_detail_pinus_pengger footer div:nth-child(2) {
+  display: flex;
+  gap: 2rem;
+}
+section#wisata_detail_pinus_pengger footer div:nth-child(2) ul {
+  list-style: square;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+section#wisata_detail_malioboro {
+  overflow: hidden;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+section#wisata_detail_malioboro header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
+section#wisata_detail_malioboro header:hover .logo {
+  animation: none;
+  transform: scale(8) translateX(100%) translateY(50%);
+}
+section#wisata_detail_malioboro header .logo {
+  z-index: 999;
+  animation: spin 1s linear infinite;
+}
+section#wisata_detail_malioboro header .logo img {
+  width: 85px;
+}
+section#wisata_detail_malioboro header .title h1 {
+  font-size: 3rem;
+}
+section#wisata_detail_malioboro header .title h1::first-letter {
+  font-size: 4rem;
+  font-style: italic;
+}
+section#wisata_detail_malioboro nav {
+  display: flex;
+}
+section#wisata_detail_malioboro nav ul {
+  background-color: white;
+  display: flex;
+  margin-top: -15px;
+  margin-left: 75px;
+  gap: 5px;
+  list-style: none;
+}
+section#wisata_detail_malioboro nav ul li:nth-child(3) .nav-link {
+  border: 1px solid black;
+}
+section#wisata_detail_malioboro nav ul li:nth-child(3) .nav-link::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#wisata_detail_malioboro nav ul li .nav-link {
+  min-width: 120px;
+  padding: 0 10px;
+  text-decoration: none;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+section#wisata_detail_malioboro nav ul li .nav-link::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: 0.3s;
+  mix-blend-mode: difference;
+}
+section#wisata_detail_malioboro nav ul li .nav-link:hover::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#wisata_detail_malioboro nav ul li .nav-link:active {
+  transform: translate(5px, 5px);
+  transition-duration: 0.3s;
+}
+section#wisata_detail_malioboro section {
+  height: 100%;
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1.5px;
+  min-height: 30vh;
+}
+section#wisata_detail_malioboro section aside {
+  padding: 5px 20px;
+  border-right: 3px solid black;
+  padding-top: 0.8rem;
+}
+section#wisata_detail_malioboro section aside .title {
+  background-color: black;
+  margin-bottom: 2rem;
+  padding: 5px 10px;
+  min-width: max-content;
+}
+section#wisata_detail_malioboro section aside .title h1 {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+section#wisata_detail_malioboro section aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+}
+section#wisata_detail_malioboro section aside ul li {
+  display: flex;
+  justify-content: center;
+}
+section#wisata_detail_malioboro section aside ul li:nth-child(3) {
+  font-weight: bold;
+}
+section#wisata_detail_malioboro section aside ul li a {
+  font-size: 1rem;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+section#wisata_detail_malioboro section main {
+  overflow-y: auto;
+  flex-grow: 1;
+  border-left: 3px solid black;
+  height: 100%;
+}
+section#wisata_detail_malioboro section main::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+section#wisata_detail_malioboro section main::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #9ca3af;
+}
+section#wisata_detail_malioboro section main::-webkit-scrollbar-track:hover {
+  background-color: #9ca3af;
+}
+section#wisata_detail_malioboro section main::-webkit-scrollbar-track:active {
+  background-color: #9ca3af;
+}
+section#wisata_detail_malioboro section main::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #4b5563;
+}
+section#wisata_detail_malioboro section main::-webkit-scrollbar-thumb:hover {
+  background-color: #4b5563;
+}
+section#wisata_detail_malioboro section main::-webkit-scrollbar-thumb:active {
+  background-color: #4b5563;
+}
+section#wisata_detail_malioboro section main .title {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  padding-top: 0;
+}
+section#wisata_detail_malioboro section main .title h1 {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 0.3rem;
+  color: white;
+  font-size: 2rem;
+}
+section#wisata_detail_malioboro section main .content {
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+}
+section#wisata_detail_malioboro section main .content_title {
+  width: 100%;
+}
+section#wisata_detail_malioboro section main .content_title h1 {
+  text-decoration: underline;
+  text-align: left;
+  width: 100%;
+}
+section#wisata_detail_malioboro section main .content_title h1::first-letter {
+  font-size: 3rem;
+}
+section#wisata_detail_malioboro section main .content_image {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 10px;
+  max-height: 300px;
+}
+section#wisata_detail_malioboro section main .content_image img {
+  width: 550px;
+  aspect-ratio: 2/1;
+}
+section#wisata_detail_malioboro section main .content_image_description {
+  padding: 5px;
+  overflow-y: auto;
+}
+section#wisata_detail_malioboro section main .content_image_description::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+section#wisata_detail_malioboro section main .content_image_description::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #9ca3af;
+}
+section#wisata_detail_malioboro section main .content_image_description::-webkit-scrollbar-track:hover {
+  background-color: #9ca3af;
+}
+section#wisata_detail_malioboro section main .content_image_description::-webkit-scrollbar-track:active {
+  background-color: #9ca3af;
+}
+section#wisata_detail_malioboro section main .content_image_description::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #4b5563;
+}
+section#wisata_detail_malioboro section main .content_image_description::-webkit-scrollbar-thumb:hover {
+  background-color: #4b5563;
+}
+section#wisata_detail_malioboro section main .content_image_description::-webkit-scrollbar-thumb:active {
+  background-color: #4b5563;
+}
+section#wisata_detail_malioboro section main .content p {
+  text-align: justify;
+  font-size: 0.9rem;
+}
+section#wisata_detail_malioboro section main .content p::first-letter {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+section#wisata_detail_malioboro footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  border-top: 3px solid black;
+  padding: 0.1rem 1rem;
+}
+section#wisata_detail_malioboro footer div:nth-child(1) {
+  min-width: max-content;
+}
+section#wisata_detail_malioboro footer div:nth-child(2) {
+  display: flex;
+  gap: 2rem;
+}
+section#wisata_detail_malioboro footer div:nth-child(2) ul {
+  list-style: square;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+section#wisata_detail_prambanan {
+  overflow: hidden;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+section#wisata_detail_prambanan header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
+section#wisata_detail_prambanan header:hover .logo {
+  animation: none;
+  transform: scale(8) translateX(100%) translateY(50%);
+}
+section#wisata_detail_prambanan header .logo {
+  z-index: 999;
+  animation: spin 1s linear infinite;
+}
+section#wisata_detail_prambanan header .logo img {
+  width: 85px;
+}
+section#wisata_detail_prambanan header .title h1 {
+  font-size: 3rem;
+}
+section#wisata_detail_prambanan header .title h1::first-letter {
+  font-size: 4rem;
+  font-style: italic;
+}
+section#wisata_detail_prambanan nav {
+  display: flex;
+}
+section#wisata_detail_prambanan nav ul {
+  background-color: white;
+  display: flex;
+  margin-top: -15px;
+  margin-left: 75px;
+  gap: 5px;
+  list-style: none;
+}
+section#wisata_detail_prambanan nav ul li:nth-child(3) .nav-link {
+  border: 1px solid black;
+}
+section#wisata_detail_prambanan nav ul li:nth-child(3) .nav-link::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#wisata_detail_prambanan nav ul li .nav-link {
+  min-width: 120px;
+  padding: 0 10px;
+  text-decoration: none;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+section#wisata_detail_prambanan nav ul li .nav-link::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: 0.3s;
+  mix-blend-mode: difference;
+}
+section#wisata_detail_prambanan nav ul li .nav-link:hover::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#wisata_detail_prambanan nav ul li .nav-link:active {
+  transform: translate(5px, 5px);
+  transition-duration: 0.3s;
+}
+section#wisata_detail_prambanan section {
+  height: 100%;
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1.5px;
+  min-height: 30vh;
+}
+section#wisata_detail_prambanan section aside {
+  padding: 5px 20px;
+  border-right: 3px solid black;
+  padding-top: 0.8rem;
+}
+section#wisata_detail_prambanan section aside .title {
+  background-color: black;
+  margin-bottom: 2rem;
+  padding: 5px 10px;
+  min-width: max-content;
+}
+section#wisata_detail_prambanan section aside .title h1 {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+section#wisata_detail_prambanan section aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+}
+section#wisata_detail_prambanan section aside ul li {
+  display: flex;
+  justify-content: center;
+}
+section#wisata_detail_prambanan section aside ul li:nth-child(4) {
+  font-weight: bold;
+}
+section#wisata_detail_prambanan section aside ul li a {
+  font-size: 1rem;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+section#wisata_detail_prambanan section main {
+  overflow-y: auto;
+  flex-grow: 1;
+  border-left: 3px solid black;
+  height: 100%;
+}
+section#wisata_detail_prambanan section main::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+section#wisata_detail_prambanan section main::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #9ca3af;
+}
+section#wisata_detail_prambanan section main::-webkit-scrollbar-track:hover {
+  background-color: #9ca3af;
+}
+section#wisata_detail_prambanan section main::-webkit-scrollbar-track:active {
+  background-color: #9ca3af;
+}
+section#wisata_detail_prambanan section main::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #4b5563;
+}
+section#wisata_detail_prambanan section main::-webkit-scrollbar-thumb:hover {
+  background-color: #4b5563;
+}
+section#wisata_detail_prambanan section main::-webkit-scrollbar-thumb:active {
+  background-color: #4b5563;
+}
+section#wisata_detail_prambanan section main .title {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  padding-top: 0;
+}
+section#wisata_detail_prambanan section main .title h1 {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 0.3rem;
+  color: white;
+  font-size: 2rem;
+}
+section#wisata_detail_prambanan section main .content {
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+}
+section#wisata_detail_prambanan section main .content_title {
+  width: 100%;
+}
+section#wisata_detail_prambanan section main .content_title h1 {
+  text-decoration: underline;
+  text-align: left;
+  width: 100%;
+}
+section#wisata_detail_prambanan section main .content_title h1::first-letter {
+  font-size: 3rem;
+}
+section#wisata_detail_prambanan section main .content_image {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 10px;
+  max-height: 300px;
+}
+section#wisata_detail_prambanan section main .content_image img {
+  width: 550px;
+  aspect-ratio: 2/1;
+}
+section#wisata_detail_prambanan section main .content_image_description {
+  padding: 5px;
+  overflow-y: auto;
+}
+section#wisata_detail_prambanan section main .content_image_description::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+section#wisata_detail_prambanan section main .content_image_description::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #9ca3af;
+}
+section#wisata_detail_prambanan section main .content_image_description::-webkit-scrollbar-track:hover {
+  background-color: #9ca3af;
+}
+section#wisata_detail_prambanan section main .content_image_description::-webkit-scrollbar-track:active {
+  background-color: #9ca3af;
+}
+section#wisata_detail_prambanan section main .content_image_description::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #4b5563;
+}
+section#wisata_detail_prambanan section main .content_image_description::-webkit-scrollbar-thumb:hover {
+  background-color: #4b5563;
+}
+section#wisata_detail_prambanan section main .content_image_description::-webkit-scrollbar-thumb:active {
+  background-color: #4b5563;
+}
+section#wisata_detail_prambanan section main .content p {
+  text-align: justify;
+  font-size: 0.9rem;
+}
+section#wisata_detail_prambanan section main .content p::first-letter {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+section#wisata_detail_prambanan footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  border-top: 3px solid black;
+  padding: 0.1rem 1rem;
+}
+section#wisata_detail_prambanan footer div:nth-child(1) {
+  min-width: max-content;
+}
+section#wisata_detail_prambanan footer div:nth-child(2) {
+  display: flex;
+  gap: 2rem;
+}
+section#wisata_detail_prambanan footer div:nth-child(2) ul {
   list-style: square;
 }
 @keyframes spin {
