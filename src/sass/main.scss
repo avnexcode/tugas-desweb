@@ -1144,13 +1144,8 @@ section#blpt_detail_structure {
                 padding: 1rem 2rem;
                 justify-content: center;
                 align-items: center;
-                p {
-                    text-align: justify;
-                    font-size: 0.9rem;
-                    &::first-letter {
-                        font-weight: bold;
-                        font-size: 1.5rem;
-                    }
+                img {
+                    width: 100%;
                 }
             }
         }
@@ -1964,13 +1959,8 @@ section#amikom_detail_structure {
                 padding: 1rem 2rem;
                 justify-content: center;
                 align-items: center;
-                p {
-                    text-align: justify;
-                    font-size: 0.9rem;
-                    &::first-letter {
-                        font-weight: bold;
-                        font-size: 1.5rem;
-                    }
+                img {
+                    width: 100%;
                 }
             }
         }

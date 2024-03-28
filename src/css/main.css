@@ -1142,13 +1142,8 @@ section#blpt_detail_structure section main .content {
   justify-content: center;
   align-items: center;
 }
-section#blpt_detail_structure section main .content p {
-  text-align: justify;
-  font-size: 0.9rem;
-}
-section#blpt_detail_structure section main .content p::first-letter {
-  font-weight: bold;
-  font-size: 1.5rem;
+section#blpt_detail_structure section main .content img {
+  width: 100%;
 }
 section#blpt_detail_structure footer {
   display: flex;
@@ -1990,13 +1985,8 @@ section#amikom_detail_structure section main .content {
   justify-content: center;
   align-items: center;
 }
-section#amikom_detail_structure section main .content p {
-  text-align: justify;
-  font-size: 0.9rem;
-}
-section#amikom_detail_structure section main .content p::first-letter {
-  font-weight: bold;
-  font-size: 1.5rem;
+section#amikom_detail_structure section main .content img {
+  width: 100%;
 }
 section#amikom_detail_structure footer {
   display: flex;
