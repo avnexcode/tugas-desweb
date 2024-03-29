@@ -864,7 +864,7 @@ section#blpt_detail_material section aside ul li {
   display: flex;
   justify-content: center;
 }
-section#blpt_detail_material section aside ul li:nth-child(2) {
+section#blpt_detail_material section aside ul li:nth-child(4) {
   font-weight: bold;
 }
 section#blpt_detail_material section aside ul li a {
@@ -954,6 +954,434 @@ section#blpt_detail_material footer div:nth-child(2) {
   gap: 2rem;
 }
 section#blpt_detail_material footer div:nth-child(2) ul {
+  list-style: square;
+}
+
+section#blpt_detail_history {
+  overflow: hidden;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+section#blpt_detail_history header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
+section#blpt_detail_history header .logo img {
+  width: 60px;
+}
+section#blpt_detail_history header .title h1 {
+  font-size: 3rem;
+}
+section#blpt_detail_history header .title h1::first-letter {
+  font-size: 4rem;
+  font-style: italic;
+}
+section#blpt_detail_history nav {
+  display: flex;
+}
+section#blpt_detail_history nav ul {
+  background-color: white;
+  display: flex;
+  margin-top: -15px;
+  margin-left: 75px;
+  gap: 5px;
+  list-style: none;
+}
+section#blpt_detail_history nav ul li:nth-child(1) .nav-link {
+  border: 1px solid black;
+}
+section#blpt_detail_history nav ul li:nth-child(1) .nav-link::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#blpt_detail_history nav ul li .nav-link {
+  min-width: 120px;
+  padding: 0 10px;
+  text-decoration: none;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+section#blpt_detail_history nav ul li .nav-link::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: 0.3s;
+  mix-blend-mode: difference;
+}
+section#blpt_detail_history nav ul li .nav-link:hover::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#blpt_detail_history nav ul li .nav-link:active {
+  transform: translate(5px, 5px);
+  transition-duration: 0.3s;
+}
+section#blpt_detail_history section {
+  height: 100%;
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1.5px;
+  min-height: 30vh;
+}
+section#blpt_detail_history section aside {
+  padding: 5px 20px;
+  border-right: 3px solid black;
+  padding-top: 0.8rem;
+}
+section#blpt_detail_history section aside .title {
+  background-color: black;
+  margin-bottom: 2rem;
+  padding: 5px 10px;
+  min-width: max-content;
+}
+section#blpt_detail_history section aside .title h1 {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+section#blpt_detail_history section aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+}
+section#blpt_detail_history section aside ul li {
+  display: flex;
+  justify-content: center;
+}
+section#blpt_detail_history section aside ul li:nth-child(2) {
+  font-weight: bold;
+}
+section#blpt_detail_history section aside ul li a {
+  font-size: 1rem;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+section#blpt_detail_history section main {
+  overflow-y: auto;
+  flex-grow: 1;
+  border-left: 3px solid black;
+  height: 100%;
+}
+section#blpt_detail_history section main::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+section#blpt_detail_history section main::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #9ca3af;
+}
+section#blpt_detail_history section main::-webkit-scrollbar-track:hover {
+  background-color: #9ca3af;
+}
+section#blpt_detail_history section main::-webkit-scrollbar-track:active {
+  background-color: #9ca3af;
+}
+section#blpt_detail_history section main::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #4b5563;
+}
+section#blpt_detail_history section main::-webkit-scrollbar-thumb:hover {
+  background-color: #4b5563;
+}
+section#blpt_detail_history section main::-webkit-scrollbar-thumb:active {
+  background-color: #4b5563;
+}
+section#blpt_detail_history section main .title {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  padding-top: 0;
+}
+section#blpt_detail_history section main .title h1 {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 0.3rem;
+  color: white;
+  font-size: 2rem;
+}
+section#blpt_detail_history section main .content {
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+}
+section#blpt_detail_history section main .content p {
+  text-align: justify;
+  font-size: 0.9rem;
+}
+section#blpt_detail_history section main .content p::first-letter {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+section#blpt_detail_history footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  border-top: 3px solid black;
+  padding: 0.1rem 1rem;
+}
+section#blpt_detail_history footer div:nth-child(1) {
+  min-width: max-content;
+}
+section#blpt_detail_history footer div:nth-child(2) {
+  display: flex;
+  gap: 2rem;
+}
+section#blpt_detail_history footer div:nth-child(2) ul {
+  list-style: square;
+}
+
+section#blpt_detail_vision {
+  overflow: hidden;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+section#blpt_detail_vision header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
+section#blpt_detail_vision header .logo img {
+  width: 60px;
+}
+section#blpt_detail_vision header .title h1 {
+  font-size: 3rem;
+}
+section#blpt_detail_vision header .title h1::first-letter {
+  font-size: 4rem;
+  font-style: italic;
+}
+section#blpt_detail_vision nav {
+  display: flex;
+}
+section#blpt_detail_vision nav ul {
+  background-color: white;
+  display: flex;
+  margin-top: -15px;
+  margin-left: 75px;
+  gap: 5px;
+  list-style: none;
+}
+section#blpt_detail_vision nav ul li:nth-child(1) .nav-link {
+  border: 1px solid black;
+}
+section#blpt_detail_vision nav ul li:nth-child(1) .nav-link::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#blpt_detail_vision nav ul li .nav-link {
+  min-width: 120px;
+  padding: 0 10px;
+  text-decoration: none;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+section#blpt_detail_vision nav ul li .nav-link::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: 0.3s;
+  mix-blend-mode: difference;
+}
+section#blpt_detail_vision nav ul li .nav-link:hover::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#blpt_detail_vision nav ul li .nav-link:active {
+  transform: translate(5px, 5px);
+  transition-duration: 0.3s;
+}
+section#blpt_detail_vision section {
+  height: 100%;
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1.5px;
+  min-height: 30vh;
+}
+section#blpt_detail_vision section aside {
+  padding: 5px 20px;
+  border-right: 3px solid black;
+  padding-top: 0.8rem;
+}
+section#blpt_detail_vision section aside .title {
+  background-color: black;
+  margin-bottom: 2rem;
+  padding: 5px 10px;
+  min-width: max-content;
+}
+section#blpt_detail_vision section aside .title h1 {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+section#blpt_detail_vision section aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+}
+section#blpt_detail_vision section aside ul li {
+  display: flex;
+  justify-content: center;
+}
+section#blpt_detail_vision section aside ul li:nth-child(3) {
+  font-weight: bold;
+}
+section#blpt_detail_vision section aside ul li a {
+  font-size: 1rem;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+section#blpt_detail_vision section main {
+  overflow-y: auto;
+  flex-grow: 1;
+  border-left: 3px solid black;
+  height: 100%;
+}
+section#blpt_detail_vision section main::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+section#blpt_detail_vision section main::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #9ca3af;
+}
+section#blpt_detail_vision section main::-webkit-scrollbar-track:hover {
+  background-color: #9ca3af;
+}
+section#blpt_detail_vision section main::-webkit-scrollbar-track:active {
+  background-color: #9ca3af;
+}
+section#blpt_detail_vision section main::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #4b5563;
+}
+section#blpt_detail_vision section main::-webkit-scrollbar-thumb:hover {
+  background-color: #4b5563;
+}
+section#blpt_detail_vision section main::-webkit-scrollbar-thumb:active {
+  background-color: #4b5563;
+}
+section#blpt_detail_vision section main .title {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  padding-top: 0;
+}
+section#blpt_detail_vision section main .title h1 {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 0.3rem;
+  color: white;
+  font-size: 2rem;
+}
+section#blpt_detail_vision section main .content {
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem 2rem;
+  justify-content: center;
+}
+section#blpt_detail_vision section main .content div.vision h1 {
+  font-size: 1.5rem;
+}
+section#blpt_detail_vision section main .content div.vision ul {
+  list-style: none;
+}
+section#blpt_detail_vision section main .content div.mission h1 {
+  font-size: 1.5rem;
+}
+section#blpt_detail_vision section main .content div.mission ul {
+  list-style: decimal;
+  text-align: justify;
+}
+section#blpt_detail_vision footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  border-top: 3px solid black;
+  padding: 0.1rem 1rem;
+}
+section#blpt_detail_vision footer div:nth-child(1) {
+  min-width: max-content;
+}
+section#blpt_detail_vision footer div:nth-child(2) {
+  display: flex;
+  gap: 2rem;
+}
+section#blpt_detail_vision footer div:nth-child(2) ul {
   list-style: square;
 }
 
@@ -1076,7 +1504,7 @@ section#blpt_detail_structure section aside ul li {
   display: flex;
   justify-content: center;
 }
-section#blpt_detail_structure section aside ul li:nth-child(3) {
+section#blpt_detail_structure section aside ul li:nth-child(5) {
   font-weight: bold;
 }
 section#blpt_detail_structure section aside ul li a {
@@ -1283,7 +1711,7 @@ section#blpt_detail_project section aside ul li {
   display: flex;
   justify-content: center;
 }
-section#blpt_detail_project section aside ul li:nth-child(4) {
+section#blpt_detail_project section aside ul li:nth-child(6) {
   font-weight: bold;
 }
 section#blpt_detail_project section aside ul li a {
@@ -1349,11 +1777,22 @@ section#blpt_detail_project section main .content {
   justify-content: center;
   align-items: center;
 }
-section#blpt_detail_project section main .content p {
+section#blpt_detail_project section main .content .image-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+section#blpt_detail_project section main .content .image-group img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 35px;
+}
+section#blpt_detail_project section main .content .description p {
   text-align: justify;
   font-size: 0.9rem;
 }
-section#blpt_detail_project section main .content p::first-letter {
+section#blpt_detail_project section main .content .description p::first-letter {
   font-weight: bold;
   font-size: 1.5rem;
 }
@@ -1495,7 +1934,7 @@ section#blpt_detail_documentation section aside ul li {
   display: flex;
   justify-content: center;
 }
-section#blpt_detail_documentation section aside ul li:nth-child(5) {
+section#blpt_detail_documentation section aside ul li:nth-child(7) {
   font-weight: bold;
 }
 section#blpt_detail_documentation section aside ul li a {
@@ -1567,8 +2006,9 @@ section#blpt_detail_documentation section main .content .image-group {
   justify-content: space-evenly;
 }
 section#blpt_detail_documentation section main .content .image-group img {
+  object-fit: cover;
   width: 500px;
-  max-height: 350px;
+  height: 300px;
   margin-bottom: 35px;
 }
 section#blpt_detail_documentation footer {
@@ -1709,7 +2149,7 @@ section#amikom_detail_material section aside ul li {
   display: flex;
   justify-content: center;
 }
-section#amikom_detail_material section aside ul li:nth-child(2) {
+section#amikom_detail_material section aside ul li:nth-child(4) {
   font-weight: bold;
 }
 section#amikom_detail_material section aside ul li a {
@@ -1799,6 +2239,434 @@ section#amikom_detail_material footer div:nth-child(2) {
   gap: 2rem;
 }
 section#amikom_detail_material footer div:nth-child(2) ul {
+  list-style: square;
+}
+
+section#amikom_detail_vision {
+  overflow: hidden;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+section#amikom_detail_vision header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
+section#amikom_detail_vision header .logo img {
+  width: 60px;
+}
+section#amikom_detail_vision header .title h1 {
+  font-size: 3rem;
+}
+section#amikom_detail_vision header .title h1::first-letter {
+  font-size: 4rem;
+  font-style: italic;
+}
+section#amikom_detail_vision nav {
+  display: flex;
+}
+section#amikom_detail_vision nav ul {
+  background-color: white;
+  display: flex;
+  margin-top: -15px;
+  margin-left: 75px;
+  gap: 5px;
+  list-style: none;
+}
+section#amikom_detail_vision nav ul li:nth-child(2) .nav-link {
+  border: 1px solid black;
+}
+section#amikom_detail_vision nav ul li:nth-child(2) .nav-link::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#amikom_detail_vision nav ul li .nav-link {
+  min-width: 120px;
+  padding: 0 10px;
+  text-decoration: none;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+section#amikom_detail_vision nav ul li .nav-link::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: 0.3s;
+  mix-blend-mode: difference;
+}
+section#amikom_detail_vision nav ul li .nav-link:hover::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#amikom_detail_vision nav ul li .nav-link:active {
+  transform: translate(5px, 5px);
+  transition-duration: 0.3s;
+}
+section#amikom_detail_vision section {
+  height: 100%;
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1.5px;
+  min-height: 30vh;
+}
+section#amikom_detail_vision section aside {
+  padding: 5px 20px;
+  border-right: 3px solid black;
+  padding-top: 0.8rem;
+}
+section#amikom_detail_vision section aside .title {
+  background-color: black;
+  margin-bottom: 2rem;
+  padding: 5px 10px;
+  min-width: max-content;
+}
+section#amikom_detail_vision section aside .title h1 {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+section#amikom_detail_vision section aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+}
+section#amikom_detail_vision section aside ul li {
+  display: flex;
+  justify-content: center;
+}
+section#amikom_detail_vision section aside ul li:nth-child(3) {
+  font-weight: bold;
+}
+section#amikom_detail_vision section aside ul li a {
+  font-size: 1rem;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+section#amikom_detail_vision section main {
+  overflow-y: auto;
+  flex-grow: 1;
+  border-left: 3px solid black;
+  height: 100%;
+}
+section#amikom_detail_vision section main::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+section#amikom_detail_vision section main::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #9ca3af;
+}
+section#amikom_detail_vision section main::-webkit-scrollbar-track:hover {
+  background-color: #9ca3af;
+}
+section#amikom_detail_vision section main::-webkit-scrollbar-track:active {
+  background-color: #9ca3af;
+}
+section#amikom_detail_vision section main::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #4b5563;
+}
+section#amikom_detail_vision section main::-webkit-scrollbar-thumb:hover {
+  background-color: #4b5563;
+}
+section#amikom_detail_vision section main::-webkit-scrollbar-thumb:active {
+  background-color: #4b5563;
+}
+section#amikom_detail_vision section main .title {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  padding-top: 0;
+}
+section#amikom_detail_vision section main .title h1 {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 0.3rem;
+  color: white;
+  font-size: 2rem;
+}
+section#amikom_detail_vision section main .content {
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem 2rem;
+  justify-content: center;
+}
+section#amikom_detail_vision section main .content div.vision h1 {
+  font-size: 1.5rem;
+}
+section#amikom_detail_vision section main .content div.vision ul {
+  list-style: none;
+}
+section#amikom_detail_vision section main .content div.mission h1 {
+  font-size: 1.5rem;
+}
+section#amikom_detail_vision section main .content div.mission ul {
+  list-style: decimal;
+  text-align: justify;
+}
+section#amikom_detail_vision footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  border-top: 3px solid black;
+  padding: 0.1rem 1rem;
+}
+section#amikom_detail_vision footer div:nth-child(1) {
+  min-width: max-content;
+}
+section#amikom_detail_vision footer div:nth-child(2) {
+  display: flex;
+  gap: 2rem;
+}
+section#amikom_detail_vision footer div:nth-child(2) ul {
+  list-style: square;
+}
+
+section#amikom_detail_history {
+  overflow: hidden;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+section#amikom_detail_history header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
+section#amikom_detail_history header .logo img {
+  width: 60px;
+}
+section#amikom_detail_history header .title h1 {
+  font-size: 3rem;
+}
+section#amikom_detail_history header .title h1::first-letter {
+  font-size: 4rem;
+  font-style: italic;
+}
+section#amikom_detail_history nav {
+  display: flex;
+}
+section#amikom_detail_history nav ul {
+  background-color: white;
+  display: flex;
+  margin-top: -15px;
+  margin-left: 75px;
+  gap: 5px;
+  list-style: none;
+}
+section#amikom_detail_history nav ul li:nth-child(2) .nav-link {
+  border: 1px solid black;
+}
+section#amikom_detail_history nav ul li:nth-child(2) .nav-link::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#amikom_detail_history nav ul li .nav-link {
+  min-width: 120px;
+  padding: 0 10px;
+  text-decoration: none;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+section#amikom_detail_history nav ul li .nav-link::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: 0.3s;
+  mix-blend-mode: difference;
+}
+section#amikom_detail_history nav ul li .nav-link:hover::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+section#amikom_detail_history nav ul li .nav-link:active {
+  transform: translate(5px, 5px);
+  transition-duration: 0.3s;
+}
+section#amikom_detail_history section {
+  height: 100%;
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1.5px;
+  min-height: 30vh;
+}
+section#amikom_detail_history section aside {
+  padding: 5px 20px;
+  border-right: 3px solid black;
+  padding-top: 0.8rem;
+}
+section#amikom_detail_history section aside .title {
+  background-color: black;
+  margin-bottom: 2rem;
+  padding: 5px 10px;
+  min-width: max-content;
+}
+section#amikom_detail_history section aside .title h1 {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+}
+section#amikom_detail_history section aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+}
+section#amikom_detail_history section aside ul li {
+  display: flex;
+  justify-content: center;
+}
+section#amikom_detail_history section aside ul li:nth-child(2) {
+  font-weight: bold;
+}
+section#amikom_detail_history section aside ul li a {
+  font-size: 1rem;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+section#amikom_detail_history section main {
+  overflow-y: auto;
+  flex-grow: 1;
+  border-left: 3px solid black;
+  height: 100%;
+}
+section#amikom_detail_history section main::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+section#amikom_detail_history section main::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #9ca3af;
+}
+section#amikom_detail_history section main::-webkit-scrollbar-track:hover {
+  background-color: #9ca3af;
+}
+section#amikom_detail_history section main::-webkit-scrollbar-track:active {
+  background-color: #9ca3af;
+}
+section#amikom_detail_history section main::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #4b5563;
+}
+section#amikom_detail_history section main::-webkit-scrollbar-thumb:hover {
+  background-color: #4b5563;
+}
+section#amikom_detail_history section main::-webkit-scrollbar-thumb:active {
+  background-color: #4b5563;
+}
+section#amikom_detail_history section main .title {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  padding-top: 0;
+}
+section#amikom_detail_history section main .title h1 {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 0.3rem;
+  color: white;
+  font-size: 2rem;
+}
+section#amikom_detail_history section main .content {
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+}
+section#amikom_detail_history section main .content p {
+  text-align: justify;
+  font-size: 0.9rem;
+}
+section#amikom_detail_history section main .content p::first-letter {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+section#amikom_detail_history footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  border-top: 3px solid black;
+  padding: 0.1rem 1rem;
+}
+section#amikom_detail_history footer div:nth-child(1) {
+  min-width: max-content;
+}
+section#amikom_detail_history footer div:nth-child(2) {
+  display: flex;
+  gap: 2rem;
+}
+section#amikom_detail_history footer div:nth-child(2) ul {
   list-style: square;
 }
 
@@ -1921,7 +2789,7 @@ section#amikom_detail_structure section aside ul li {
   display: flex;
   justify-content: center;
 }
-section#amikom_detail_structure section aside ul li:nth-child(3) {
+section#amikom_detail_structure section aside ul li:nth-child(5) {
   font-weight: bold;
 }
 section#amikom_detail_structure section aside ul li a {
@@ -2128,7 +2996,7 @@ section#amikom_detail_documentation section aside ul li {
   display: flex;
   justify-content: center;
 }
-section#amikom_detail_documentation section aside ul li:nth-child(4) {
+section#amikom_detail_documentation section aside ul li:nth-child(6) {
   font-weight: bold;
 }
 section#amikom_detail_documentation section aside ul li a {
@@ -2200,8 +3068,9 @@ section#amikom_detail_documentation section main .content .image-group {
   justify-content: space-evenly;
 }
 section#amikom_detail_documentation section main .content .image-group img {
+  object-fit: cover;
   width: 500px;
-  max-height: 350px;
+  height: 300px;
   margin-bottom: 35px;
 }
 section#amikom_detail_documentation footer {
