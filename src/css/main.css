@@ -228,7 +228,6 @@ section#blpt_page section main .content {
   gap: 10px;
   padding: 1rem 2rem;
   justify-content: center;
-  align-items: center;
 }
 section#blpt_page section main .content p {
   text-align: justify;
@@ -440,7 +439,6 @@ section#amikom_page section main .content {
   gap: 10px;
   padding: 1rem 2rem;
   justify-content: center;
-  align-items: center;
 }
 section#amikom_page section main .content p {
   text-align: justify;
@@ -928,7 +926,6 @@ section#blpt_detail_material section main .content {
   gap: 10px;
   padding: 1rem 2rem;
   justify-content: center;
-  align-items: center;
 }
 section#blpt_detail_material section main .content p {
   text-align: justify;
@@ -1140,7 +1137,6 @@ section#blpt_detail_history section main .content {
   gap: 10px;
   padding: 1rem 2rem;
   justify-content: center;
-  align-items: center;
 }
 section#blpt_detail_history section main .content p {
   text-align: justify;
@@ -2213,7 +2209,6 @@ section#amikom_detail_material section main .content {
   gap: 10px;
   padding: 1rem 2rem;
   justify-content: center;
-  align-items: center;
 }
 section#amikom_detail_material section main .content p {
   text-align: justify;
@@ -2641,7 +2636,6 @@ section#amikom_detail_history section main .content {
   gap: 10px;
   padding: 1rem 2rem;
   justify-content: center;
-  align-items: center;
 }
 section#amikom_detail_history section main .content p {
   text-align: justify;
