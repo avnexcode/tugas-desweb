@@ -1549,12 +1549,14 @@ section#blpt_detail_documentation {
                 padding: 1rem 2rem;
                 justify-content: center;
                 align-items: center;
-                p {
-                    text-align: justify;
-                    font-size: 0.9rem;
-                    &::first-letter {
-                        font-weight: bold;
-                        font-size: 1.5rem;
+                .image-group {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    img {
+                        width: 500px;
+                        max-height: 350px;
+                        margin-bottom: 35px;
                     }
                 }
             }
@@ -2159,12 +2161,14 @@ section#amikom_detail_documentation {
                 padding: 1rem 2rem;
                 justify-content: center;
                 align-items: center;
-                p {
-                    text-align: justify;
-                    font-size: 0.9rem;
-                    &::first-letter {
-                        font-weight: bold;
-                        font-size: 1.5rem;
+                .image-group {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    img {
+                        width: 500px;
+                        max-height: 350px;
+                        margin-bottom: 35px;
                     }
                 }
             }

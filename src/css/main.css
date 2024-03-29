@@ -1561,13 +1561,15 @@ section#blpt_detail_documentation section main .content {
   justify-content: center;
   align-items: center;
 }
-section#blpt_detail_documentation section main .content p {
-  text-align: justify;
-  font-size: 0.9rem;
+section#blpt_detail_documentation section main .content .image-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-section#blpt_detail_documentation section main .content p::first-letter {
-  font-weight: bold;
-  font-size: 1.5rem;
+section#blpt_detail_documentation section main .content .image-group img {
+  width: 500px;
+  max-height: 350px;
+  margin-bottom: 35px;
 }
 section#blpt_detail_documentation footer {
   display: flex;
@@ -2192,13 +2194,15 @@ section#amikom_detail_documentation section main .content {
   justify-content: center;
   align-items: center;
 }
-section#amikom_detail_documentation section main .content p {
-  text-align: justify;
-  font-size: 0.9rem;
+section#amikom_detail_documentation section main .content .image-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-section#amikom_detail_documentation section main .content p::first-letter {
-  font-weight: bold;
-  font-size: 1.5rem;
+section#amikom_detail_documentation section main .content .image-group img {
+  width: 500px;
+  max-height: 350px;
+  margin-bottom: 35px;
 }
 section#amikom_detail_documentation footer {
   display: flex;
